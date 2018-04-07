@@ -1,0 +1,381 @@
+/* IMPORTS */
+
+@import "variables.scss";
+
+
+body {
+	font-family : $main-font;
+}
+
+/* HEADINGS */
+
+h2 {
+	font-family: $heading-font;
+	text-align: center;
+	font-size: 50px;
+	margin: 30px 0px !important;
+}
+
+/* NAV */
+
+header {
+	background-color: $asparagus;
+}
+
+
+.navbar-collapse {
+	justify-content: center;
+}
+
+.navbar-brand {
+		font-family: $heading-font;
+
+}
+.navbar li {
+	font-size: 20px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+	font-family: $heading-font;
+}
+
+.navbar-nav a {
+	color: rgba(255,255,255, 0.5);
+	
+	&:hover, &.active {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+.navbar-toggler {
+	line-height: 1.5!important;
+}
+.navbar-toggler-icon {
+	color: $white;
+}
+
+/* JUMBOTRON */
+
+@media screen and (max-width: 540px) {
+	.jumbotron  {
+		text-align: center;
+		color: $white;
+		text-shadow: 2px 2px 10px $black;
+		font-family: $heading-font;
+		
+		h1 {
+			font-size: 60px;
+			margin-top: 60px;
+		}
+		
+		h2 {
+			font-size: 35px;
+		}
+		
+		h3 {
+			font-size: 25px;
+			max-width: 600px;
+			margin: auto;
+		}
+	}
+}
+@media screen and (min-width: 541px) {
+	.jumbotron {
+		text-align: center;
+		color: $white;
+		text-shadow: 2px 2px 10px $black;
+		font-family: $heading-font;
+		
+		h1 {
+			font-size: 80px;
+			margin-top: 40px;
+		}
+		
+		h2 {
+			font-size: 45px;
+		}
+		
+		h3 {
+			font-size: 35px;
+			max-width: 600px;
+			margin: auto;
+		}
+	}	
+}
+
+.hero {
+	background-image: url("/Users/helene/Documents/PERSO/project/assets/im/hero-image.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin-top:58px;
+}
+
+.separator {
+	margin-top: 70px;
+	margin-bottom: 50px !important;
+	background-image: url("/Users/helene/Documents/PERSO/project/assets/im/separator-image.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	height: 100px;
+}
+
+/* CARDS */
+
+.card {
+	border: none !important;
+	margin-bottom: 20px;
+	
+	img {
+		width: 100%;
+		display: block;
+		display: block;
+	}
+	
+	h2 {
+		font-size: 30px;
+		text-align: left;
+		margin: 10px 0px !important;
+		font-family : $heading-font;
+	}
+	
+	button {
+		background-color: transparent;
+		color: $dusty-gray;
+		border-radius: 3px;
+		border: 1px solid $dusty-gray;
+		font-size: 0.75rem;
+		
+		&:hover {
+			background-color: $dusty-gray;
+			color: $white;
+			transition-duration: 0.5s
+		}
+	}
+}
+
+.card-img {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+    max-height: inherit;
+}
+
+.card-content {
+	background-color: $light-pink;
+	padding: 20px;
+	
+	p {
+		font-size: 0.85rem;
+		margin-bottom: 0.75rem;
+	}
+	
+	ul {
+		font-size: 0.85rem;
+		margin-bottom: 0.75rem;
+		list-style-type: circle;
+	}
+}
+
+.card-travel  {
+	background-color:  rgb($champagne, 0.75)!important;
+	
+	h3 {
+		font-size: 25px;
+		text-align: left;
+		margin: 10px 0px !important;
+		font-family : $heading-font;
+	}
+}
+
+
+
+/* PICTURES */
+@media screen and (max-width: 750px) {
+	
+	.pictures-left img {
+		width: 100%;
+		float:left;
+		margin-bottom: 130px;
+	}
+	.pictures-right img {
+		width: 100%;
+		float:right;
+		margin-bottom: 130px;
+	}
+	.legend-right {
+		background-color: rgb($champagne, 0.75);
+		padding: 10px;
+	    position: absolute;
+	    bottom: 5%;
+	    left: 10%;
+	    width: 80%;
+	    font-size: 0.75rem;
+	}
+
+	.legend-left {
+		background-color: rgb($champagne, 0.75);
+		padding: 10px;
+	    position: absolute;
+	    bottom: 5%;
+	    left: 10%;
+	    width: 80%;
+	    font-size: 0.75rem;
+	}
+
+	.legend h3 {
+		font-size: 1.15rem;
+		font-weight: bold;
+		font-family : $heading-font;
+	}
+}
+
+@media screen and (min-width: 751px) {
+	
+	.pictures-left img {
+		width: 75%;
+		float:left;
+		margin-bottom: 50px;
+	}
+	.pictures-right img {
+		width: 75%;
+		float:right;
+		margin-bottom: 50px;
+	}
+	.legend-right {
+		background-color: rgb($champagne, 0.75);
+		position: absolute;
+		top: 75px;
+		left: 65%;
+		width: 30%;
+		padding: 10px;
+		font-size: 0.8rem;
+	}
+	.legend-left {
+		background-color: rgb($champagne, 0.75);
+		padding: 10px;
+	    position: absolute;
+	    top: 75px;
+	    left: 5%;
+		width: 30%;
+	    font-size: 0.75rem;
+	}	
+	.legend h3 {
+		font-weight: bold;
+		font-size: 1.2rem;
+		font-family : $heading-font;
+	}
+}
+
+/* food */
+@media screen and (max-width: 750px) {
+	
+	.food-left img {
+		width: 100%;
+		float:left;
+		margin-bottom: 50px;
+		padding: 10px;
+	}
+	.food-right img {
+		width: 100%;
+		float:right;
+		margin-bottom: 50px;
+		padding: 10px;
+	}
+	.legend-right {
+		background-color: rgb($champagne, 0.75);
+		padding: 10px;
+	    position: absolute;
+	    bottom: 5%;
+	    left: 10%;
+	    width: 80%;
+	    font-size: 0.75rem;
+	}
+
+	.legend-left {
+		background-color: rgb($champagne, 0.75);
+		padding: 10px;
+	    position: absolute;
+	    bottom: 5%;
+	    left: 10%;
+	    width: 80%;
+	    font-size: 0.75rem;
+	}
+
+	.food-legend h3 {
+		font-size: 1rem;
+		font-weight: bold;
+		font-family : $heading-font;
+	}
+}
+
+@media screen and (min-width: 751px) {
+	
+	.food-left img {
+		width: 90%;
+		float:left;
+		margin-bottom: 50px;
+	}
+	.food-right img {
+		width: 90%;
+		float:right;
+		margin-bottom: 50px;
+	}
+	.legend-right {
+		background-color: rgb($champagne, 0.75);
+		position: absolute;
+		top: 75px;
+		left: 65%;
+		width: 30%;
+		padding: 10px;
+		font-size: 0.8rem;
+	}
+	.legend-left {
+		background-color: rgb($champagne, 0.75);
+		padding: 10px;
+	    position: absolute;
+	    top: 75px;
+	    left: 5%;
+		width: 30%;
+	    font-size: 0.75rem;
+	}	
+	.food-legend h3 {
+		font-weight: bold;
+		font-size: 1rem;
+		font-family : $heading-font;
+	}
+}
+
+.legend button {
+	background-color: transparent;
+	color: $dark-dusty-gray;
+	border-radius: 3px;
+	border: 1px solid $dark-dusty-gray;
+	font-size: 0.75rem;
+	
+	&:hover {
+		background-color: $dark-dusty-gray;
+		color: $white;
+		transition-duration: 0.5s
+	}
+}
+
+/* FOOTER */
+
+footer {
+	background-color: $asparagus;
+	height: 40px;
+	color: $white;
+	font-size: 0.75rem;
+	margin-top:40px;
+	line-height: 40px;
+	p {
+		margin-bottom: 0px;
+		text-align: right;
+	}
+}
