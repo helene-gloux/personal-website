@@ -115,7 +115,7 @@ h2 {
 }
 
 .hero {
-	background-image: url("/Users/helene/Documents/PERSO/project/assets/im/hero-image.jpg");
+	background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/hero-image.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ h2 {
 .separator {
 	margin-top: 70px;
 	margin-bottom: 50px !important;
-	background-image: url("/Users/helene/Documents/PERSO/project/assets/im/separator-image.jpg");
+	background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/separator-image.jpg");
 	background-size: cover;
 	background-attachment: fixed;
     background-position: center;
