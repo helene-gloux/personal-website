@@ -100,6 +100,9 @@ header {
 		background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/hero-image.jpg");	
 		height: 400px;
 		margin-top:58px;
+		&.argentina {
+			background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/argentina3.jpg");	
+		}
 	}
 	.separator {
 		margin-top: 70px;
