@@ -16,6 +16,15 @@ h2 {
 	margin: 30px 0px !important;
 }
 
+p {
+	font-size: 14px;
+}
+
+a {
+	color: $dusty-gray !important;
+	text-decoration: none; 
+	
+}
 /* NAV */
 
 header {
@@ -39,9 +48,9 @@ header {
 		font-family: $heading-font;
 	}
 	a {
-		color: rgba(255,255,255, 0.5);
+		color: rgba(255,255,255, 0.5)!important;
 		&:hover, &.active {
-			color: $white;
+			color: $white!important;
 			text-decoration: none;
 		}
 	}
@@ -101,7 +110,7 @@ header {
 		height: 400px;
 		margin-top:58px;
 		&.argentina {
-			background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/argentina3.jpg");	
+			background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/travels/argentina3.jpg");	
 		}
 	}
 	.separator {
@@ -148,7 +157,7 @@ header {
 	}
 
 	.card-content {
-		background-color: $light-pink;
+		background-color: $champagne !important;
 		padding: 20px;
 		
 		p {
@@ -163,7 +172,6 @@ header {
 		}
 	}
 	.card-travel  {
-			background-color:  rgb(250, 235, 216)!important;
 			h3 {
 				font-size: 25px;
 				text-align: left;
@@ -177,6 +185,7 @@ header {
 /* PICTURES */
 	
 .pictures img {
+	margin-top: 20px;
 	@media screen and (max-width: 750px) {
 		width: 100%;
 		margin-bottom: 130px;
@@ -191,7 +200,7 @@ header {
 	&.right {
 		float: right;
 	}
-	.food-picture  {
+	.small-picture  {
 		margin-bottom: 50px;
 		@media screen and (max-width: 750px) {
 			padding: 10px;
@@ -202,61 +211,51 @@ header {
 	}
 }
 
-.legend-right {
-	background-color: rgb(250, 235, 216);
+.legend {
+	background-color: $champagne;
 	padding: 10px;
     position: absolute;
     @media screen and (max-width: 750px) {  
-	    right: 10%;
 	    width: 80%;
 	    font-size: 0.75rem;
-	    bottom: 5%;
+	   	bottom: 20%;
+	    &.legend-right {
+	    	right: 10%;
+	    }
+	    &.legend-left {
+	    	left: 10%;
+	    }
 	}
 	@media screen and (min-width: 751px) {
-		top: 75px;
-	    right: 5%;
 		width: 30%;
 	    font-size: 0.75rem;
-	}
-}
-
-.legend-left {
-	background-color: rgb(250, 235, 216);
-	padding: 10px;
-    position: absolute;
-    @media screen and (max-width: 750px) {  
-	    left: 10%;
-	    width: 80%;
-	    font-size: 0.75rem;
-	    bottom: 5%;
-	}
-	@media screen and (min-width: 751px) {
 		top: 75px;
-	    left: 5%;
-		width: 30%;
-	    font-size: 0.75rem;
+		&.legend-right {
+	    	right: 5%;
+	    }
+	    &.legend-left {
+	    	left: 5%;
+	    }
 	}
-}
-
-.legend h3 {
-	font-size: 1.15rem;
-	font-weight: bold;
-	font-family : $heading-font;
-	.food-legend {
-		font-size: 1rem;
+	h3 {
+		font-size: 1.15rem;
+		font-weight: bold;
+		font-family : $heading-font;
+		&.small-legend {
+			font-size: 1rem;
+		}
 	}
-}
-
-.legend button {
-	background-color: transparent;
-	color: $dark-dusty-gray;
-	border-radius: 3px;
-	border: 1px solid $dark-dusty-gray;
-	font-size: 0.75rem;	
-	&:hover {
-		background-color: $dark-dusty-gray;
-		color: $white;
-		transition-duration: 0.5s
+	button {
+		background-color: transparent;
+		color: $dark-dusty-gray;
+		border-radius: 3px;
+		border: 1px solid $dark-dusty-gray;
+		font-size: 0.75rem;	
+		&:hover {
+			background-color: $dark-dusty-gray;
+			color: $white;
+			transition-duration: 0.5s
+		}
 	}
 }
 

@@ -11,6 +11,13 @@ h2 {
   font-size: 50px;
   margin: 30px 0px !important; }
 
+p {
+  font-size: 14px; }
+
+a {
+  color: #a59696 !important;
+  text-decoration: none; }
+
 /* NAV */
 header {
   background-color: #4b5d4b; }
@@ -28,9 +35,9 @@ header {
   text-align: center;
   font-family: "Shadows Into Light", cursive !important; }
 .navbar-nav a {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5) !important; }
   .navbar-nav a:hover, .navbar-nav a.active {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none; }
 
 .navbar-toggler {
@@ -77,7 +84,7 @@ header {
   height: 400px;
   margin-top: 58px; }
   .hero.argentina {
-    background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/argentina3.jpg"); }
+    background-image: url("/Users/helene/Documents/PERSO/project/personal-website/assets/im/travels/argentina3.jpg"); }
 
 .separator {
   margin-top: 70px;
@@ -113,7 +120,7 @@ header {
       overflow: hidden;
       width: 100%; }
   .card .card-content {
-    background-color: #f9f1f2;
+    background-color: #fdf6ef !important;
     padding: 20px; }
     .card .card-content p {
       font-size: 0.85rem;
@@ -122,87 +129,74 @@ header {
       font-size: 0.85rem;
       margin-bottom: 0.75rem;
       list-style-type: circle; }
-  .card .card-travel {
-    background-color: #faebd8 !important; }
-    .card .card-travel h3 {
-      font-size: 25px;
-      text-align: left;
-      margin: 10px 0px !important;
-      font-family: "Shadows Into Light", cursive !important; }
+  .card .card-travel h3 {
+    font-size: 25px;
+    text-align: left;
+    margin: 10px 0px !important;
+    font-family: "Shadows Into Light", cursive !important; }
 
 /* PICTURES */
-@media screen and (max-width: 750px) {
-  .pictures img {
-    width: 100%;
-    margin-bottom: 130px; } }
-@media screen and (min-width: 751px) {
-  .pictures img {
-    width: 75%;
-    margin-bottom: 50px; } }
-.pictures img.left {
-  float: left; }
-.pictures img.right {
-  float: right; }
-.pictures img .food-picture {
-  margin-bottom: 50px; }
+.pictures img {
+  margin-top: 20px; }
   @media screen and (max-width: 750px) {
-    .pictures img .food-picture {
-      padding: 10px; } }
+    .pictures img {
+      width: 100%;
+      margin-bottom: 130px; } }
   @media screen and (min-width: 751px) {
-    .pictures img .food-picture {
-      width: 90%; } }
+    .pictures img {
+      width: 75%;
+      margin-bottom: 50px; } }
+  .pictures img.left {
+    float: left; }
+  .pictures img.right {
+    float: right; }
+  .pictures img .small-picture {
+    margin-bottom: 50px; }
+    @media screen and (max-width: 750px) {
+      .pictures img .small-picture {
+        padding: 10px; } }
+    @media screen and (min-width: 751px) {
+      .pictures img .small-picture {
+        width: 90%; } }
 
-.legend-right {
-  background-color: #faebd8;
+.legend {
+  background-color: #fdf6ef;
   padding: 10px;
   position: absolute; }
   @media screen and (max-width: 750px) {
-    .legend-right {
-      right: 10%;
+    .legend {
       width: 80%;
       font-size: 0.75rem;
-      bottom: 5%; } }
+      bottom: 20%; }
+      .legend.legend-right {
+        right: 10%; }
+      .legend.legend-left {
+        left: 10%; } }
   @media screen and (min-width: 751px) {
-    .legend-right {
-      top: 75px;
-      right: 5%;
+    .legend {
       width: 30%;
-      font-size: 0.75rem; } }
-
-.legend-left {
-  background-color: #faebd8;
-  padding: 10px;
-  position: absolute; }
-  @media screen and (max-width: 750px) {
-    .legend-left {
-      left: 10%;
-      width: 80%;
       font-size: 0.75rem;
-      bottom: 5%; } }
-  @media screen and (min-width: 751px) {
-    .legend-left {
-      top: 75px;
-      left: 5%;
-      width: 30%;
-      font-size: 0.75rem; } }
-
-.legend h3 {
-  font-size: 1.15rem;
-  font-weight: bold;
-  font-family: "Shadows Into Light", cursive !important; }
-  .legend h3 .food-legend {
-    font-size: 1rem; }
-
-.legend button {
-  background-color: transparent;
-  color: #565050;
-  border-radius: 3px;
-  border: 1px solid #565050;
-  font-size: 0.75rem; }
-  .legend button:hover {
-    background-color: #565050;
-    color: #fff;
-    transition-duration: 0.5s; }
+      top: 75px; }
+      .legend.legend-right {
+        right: 5%; }
+      .legend.legend-left {
+        left: 5%; } }
+  .legend h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    font-family: "Shadows Into Light", cursive !important; }
+    .legend h3.small-legend {
+      font-size: 1rem; }
+  .legend button {
+    background-color: transparent;
+    color: #565050;
+    border-radius: 3px;
+    border: 1px solid #565050;
+    font-size: 0.75rem; }
+    .legend button:hover {
+      background-color: #565050;
+      color: #fff;
+      transition-duration: 0.5s; }
 
 /* FOOTER */
 footer {
